@@ -1,0 +1,9 @@
+record(sub, "$(N)s") {
+  field(SNAM, "mysub")
+  field(INPA, "$(A)")
+}
+record(calcout, "$(N)t") {
+  field(INPA, "$(N)s.A NPP")
+  field(CALC, "A+1")
+  field(OUT , "$(N)s.A PP")
+}
